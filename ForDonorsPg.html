@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<link href="style.css" rel="stylesheet" type="text/css" />
+<style>
+*{
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px;
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  body{
+  background-color:#f3efe0
+  }
+</style>
+  <center><img src="fooddonation.jpg" alt="img description" width="400" height="450"></center>
+</head>
+
+<body>
+<h1>General Information for Prospective Donors</h1>
+<p><i>"Donors are part of the fabric of our mission."</i> We wouldn't be able to do this without you. Thank you to each and every one of you for making a contribution.<br></p>
+<h2>Our Two Paths for Food Donors</h2>
+
+<div class="row">
+  <div class="column" style="background-color:#85704D;">
+    <h2><center>Transit Path</center></h2>
+    <ol>
+      <li>Our more widespread option</li>
+      <li>All you need is this app on your phone and your excess food.</li>
+      <li>Our app will connect you to the nearest less fortunate fellow.</li>
+      <li>Please try to deliver this food to a nearby fellow within 24 hours.</li>
+    </ol>
+  </div>
+  <div class="column" style="background-color:#B38D4D;">
+    <h2><center>Hub-Centric Path</center></h2>
+    <ol>
+      <li>Submit our forms regarding some basic information.</li>
+      <li>We might ask for pictures,barcodes,etc. of food to ensure food quality</li>
+      <li>One of our team members will come in <36 hours to pick up your excess food to deliver it to our select hub spots.</li>  
+  </div>
+</div>
+  <br><h2>Donor Onboarding</h2>
+  <p>Please complete the following form if you wish to donate food:</p>
+
+  <form action="/filenameor server backend" target="_blank">
+  First name:<br>
+  <input type="text" name="firstname">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname"><br>
+  Please list an address that will be used as a pickup or reference point:<br>
+  <input type="text" name="address"><br>
+  Please provide us with the best way we can reach you whether that'd be a phone # or email.<br>
+  <input type="text" name="phoneoremail"><br>
+
+  Which of our paths would you like to opt for? Please scroll above for info on each.<br>
+  <input type="radio" name="paths" value="Transit Path" checked> Transit Path. </br>
+  <input type="radio" name="paths" value="Hub-Centric Path" checked> Hub-Centric Path. </br>
+
+  <br>What type of food do you wish to donate?Please bubble in the relevant choice and specify below.<br>
+  <br><input type="radio" name="typefood" value="Bread/Baked Goods <2 days old. No mold." checked> Bread/Baked Goods <2 days old. No mold/spots.<br>
+  <input type="radio" name="typefood" value="Produce <1 week old. No mold." checked> Produce <1 week old. No mold<br>
+  <input type="radio" name="typefood" value="Unopened Canned goods >2 months from expiry date." checked> Unopened Canned goods >2 months from expiration.<br>
+  <input type="radio" name="typefood" value="Unopened dry Pantry/Cereal goods >2 months from expiry date." checked> Unopened dry Pantry/Cereal goods >2 from expiration.<br>
+  <input type="radio" name="typefood" value="Unopened dry candy/snacks/cookies >2 months from expiry date." checked> Unopened dry candy/snacks/cookies >2 months from expiration.<br>
+  <input type="radio" name="typefood" value="Unopened beverages like water bottles or soft drinks. >2 months from expiry date. NO ALCOHOL." checked> Unopened beverages like water bottles or soft drinks. >2 months from expiry date. NO ALCOHOL.<br>
+  <br><input type="text" name="typefood"><br>
+
+  <br>Lastly, do you consent with our Terms and Conditions?<br>
+  <input type="radio" name="legal" value="Yes" checked> Yes <br>
+  <input type="radio" name="legal" value="No" checked> No <br>
+
+  <center><input type="submit" value="Submit"></center>
