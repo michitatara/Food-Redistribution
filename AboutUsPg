@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<style>
+  body{
+  background-color:#f3efe0
+  }
+</style>
+<body>
+<h1><center>Who We Are</center></h1>
+<center><img src="shafooedit2.gif" alt="img description" width="400" height="450"></center>
+<p><center>We started as a small group of passioned individuals who value humanity and efficiency. We met at the Yale Hackathon 2019 and Shafoo was born. <br>Food waste really started to become a problem when giant monoculture farms became the widely accepted form of farming. Now, there is food waste everywhere. From the farms where our food is grown to the leftovers we end up dumping in the trash. <br>At the same time, as the population grows, more and more people suffer from food insecurity. More than 37 million Americans struggle with hunger in the United States.It doesn't have to be this disparate.<br><i>Join us today as we combat the imminent hunger crisis with repurposed food.</i></center></p>
+</body>
+</html>
