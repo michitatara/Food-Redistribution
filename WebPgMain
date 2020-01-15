@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<link href="style.css" rel="stylesheet" type="text/css" />
+<style>
+body {font-family:Proxima Nova;}
+
+  .tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #735F3d;
+  }
+  
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  .tab button:hover {
+  background-color: #B38D4D;
+  }
+  .tab button.active {
+  background-color: #735F3d;
+}
+  .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #735F3d;
+  border-top: none;
+}  
+  body{
+    background-color:#f3efe0
+  }
+  </style>
+  </head>
+  <body>
+
+  <div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'About Us')">About Us</button>
+    <button class="tablinks" onclick="openTab(event, 'Hungry?')">Hungry?</button>
+    <button class="tablinks" onclick="openTab(event, 'For Donors')">For Donors</button>
+  </div>
+
+  <div id="About Us" class="tabcontent">
+    <p>A little bit about us</p>
+    <a href="AboutUs.html" target="_blank">Click Here</a>
+  </div>
+
+  <div id="Hungry?" class="tabcontent">
+    <p>How to find food through Shafoo</p>
+    <a href="Hungry?.html" target="_blank">Click Here</a>
+  </div>
+  
+  <div id="For Donors" class="tabcontent">
+    <p>Information for donors</p>
+    <a href="ForDonors.html" target="_blank">Click Here</a>
+  </div>
+
+  <script>
+  function openTab(evt, tabNames) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabNames).style.display = "block";
+  evt.currentTarget.className += " active";
+  }
+  </script>
+
+  <h1><center> Welcome to Shafoo! </center></h1>
+  <p><i><center>The Shafoo solution is food redistribution.</center></i></p>
+  <center><img src="shafooedit2.gif" alt="img description" width="400" height="450"></center>
+  
+  <h1><center>What is Shafoo? </center></h1>
+
+  <dl>
+    <dt>Our Mission is simple: We know tens of thousands of food gets wasted. So we decided to find that food new purpose. Now, that food can feed the homeless and the needy.</dt>
+    <dd>Americans waste 150,000 TONS of food daily.<br></dd>
+    <dd>The United States Department of Agriculture (USDA) estimates that 1 in 8 households have struggled with food insecurity recently.</dd>
+  </dl>
+  
+  <center><img src="feedhomeless.jpg" alt="img description" width="400" height="450"></center>
+  </body>
+</html>
